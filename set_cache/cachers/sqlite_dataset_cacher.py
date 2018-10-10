@@ -49,6 +49,6 @@ class SQLiteDatasetCacher(DatasetCacher):
     def cache_dataset(self, dataset):
         for sample in dataset:
             self.__cache_sample__(sample, commit=False)
+            self.__commit__()
 
-        self.__commit__()
         self.__close__()
