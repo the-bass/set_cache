@@ -1,6 +1,6 @@
 class DatasetCacher:
 
-    DEFAULT_STORAGE_LOCATION = 'tmp'
+    DEFAULT_STORAGE_LOCATION = '.'
 
     def __init__(self, dataset_name, storage_location=None, verbose=False):
         if not storage_location:

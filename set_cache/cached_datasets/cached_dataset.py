@@ -4,7 +4,7 @@ import torch.utils.data
 
 class CachedDataset(torch.utils.data.Dataset):
 
-    DEFAULT_STORAGE_LOCATION = 'tmp'
+    DEFAULT_STORAGE_LOCATION = '.'
 
     def __init__(self, dataset_name, storage_location=None):
         if not storage_location:
